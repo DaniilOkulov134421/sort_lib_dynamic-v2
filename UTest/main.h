@@ -1,0 +1,14 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <windows.h>
+#include <stdlib.h>
+
+#include "../googletest/googletest/include/gtest/gtest.h"
+#include "../lib/sort.h"
+
+using std::string; //Это для того чтобы не нужно было писать std:: перед string
+
+// Создаем новый тип указателей на функцию той же структурой, что и функция, которую мы получм из dll
+
+typedef void (*DllFunc) (string & raw);
